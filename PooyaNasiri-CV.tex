@@ -1,0 +1,227 @@
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\geometry{a4paper, left=1in, right=1in, top=0.8in, bottom=0.8in}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{paracol} 
+\usepackage{tikz}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black]{hyperref}
+\pagenumbering{gobble}
+
+% Set font and color
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{sectioncolor}{RGB}{0, 82, 155}
+
+% Section format
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{}{0em}{}
+\titlespacing{\section}{0pt}{28pt}{12pt}
+
+% Custom item bullet
+\newcommand{\resumeItem}[1]{\item[]\textbf{#1}}
+\newcommand{\contactInfo}[2]{\faIcon{#1} \hspace{1pt} #2}
+
+\begin{document}
+
+
+\section*{\fontsize{40}{0}\selectfont \textbf{Pooya Nasiri}}
+%\vspace{-0.5em}
+\noindent
+\textcolor{gray}{\textbf{A.I. \& M.L. Engineer}}
+
+%====================
+% Two-Column Layout Start
+%====================
+\columnratio{0.75}
+\setlength{\columnsep}{20pt} % Set space between columns
+
+\begin{paracol}{2} % Begin two-column layout
+\vline
+%====================
+% Left Column (Sidebar)
+%====================
+\switchcolumn % Switch to left column
+%\vspace*{1cm}
+
+%====================
+% Contact
+%====================
+\section*{Contact Info}
+\begin{itemize}[left=0pt,label={}]
+\setlength\itemsep{-0.05em}
+	\item  \contactInfo{envelope}{\href{mailto:Pooya.nasiri75@gmail.com}{Pooya.nasiri75@gmail.com}}
+        \item \contactInfo{linkedin}{\href{https://linkedin.com/in/PooyaNasiri}{linkedin.com/in/PooyaNasiri}}
+        \item \contactInfo{github}{\href{https://github.com/PooyaNasiri}{github.com/PooyaNasiri}}
+        \item \contactInfo{gitlab}{\href{https://gitlab.com/PooyaNasiri}{gitlab.com/PooyaNasiri}} 
+        \item \contactInfo{phone}{\href{tel:+393517494340}{+3943517494340}}
+ 	\item \contactInfo{map-marker}{\href{https://www.google.com/maps/place/Padova,+Italy}{Padova, Italy}}
+\end{itemize}
+
+
+%====================
+% Languages Section
+%====================
+\section*{Languages}
+\begin{itemize}[left=0pt]
+\setlength\itemsep{-0.05em}
+    \item \textbf{Italian}: B2-\textit{Intermediate}
+    \item \textbf{English}: C1-\textit{Advanced}
+    \item \textbf{Persian}: \textit{Native}
+\end{itemize}
+
+%====================
+% Interests
+%====================
+\section*{Interests}
+\begin{itemize}[left=18pt,label={}]
+\setlength\itemsep{-0.05em}
+    \item[\faBrain] \textbf{Deep Learning}: \\CNN, DNN, RNN, LLM, NLP, Transformers
+    \item[\faEye] \textbf{Computer Vision}:\\ OpenCV
+    \item[\faProjectDiagram] \textbf{Machine Learning}:\\ Optimization, OR
+    \item[\faChartLine] \textbf{Data Science}:\\ Data mining, statistical analysis, predictive and generative modeling
+\end{itemize}
+
+
+%====================
+% Soft Skills
+%====================
+\section*{Soft Skills}
+\begin{itemize}[left=18pt,label={}]
+\setlength\itemsep{-0.05em}
+    \item[\faUsers] \textbf{Team Collaboration}
+    \item[\faTasks] \textbf{Agile Management}
+    \item[\faBug] \textbf{Problem Solving}
+    \item[\faComments] \textbf{Technical Communication}
+    \item[\faChalkboardTeacher] \textbf{Mentorship}
+    \item[\faRocket] \textbf{Adaptability}
+\end{itemize}
+
+%Draw the vertical line
+\begin{tikzpicture}[remember picture, overlay]
+    \draw[gray, very thin] (current page.north west) ++(14.4cm, -5) -- ++(0, -21);
+\end{tikzpicture}
+
+\switchcolumn % Switch to right column
+%====================
+% Right Column (Main Content)
+%====================
+
+
+%====================
+% Summary
+%====================
+\section*{Summary}
+AI and Machine Learning Engineer with 13+ years of experience developing innovative AI solutions and software applications. Skilled in Python, TensorFlow, and cross-platform development (C, C++, C\#, Swift). Proven track record of optimizing performance and delivering impactful AI-driven products. Completing a Master’s in AI at the Unipd. Seeking to contribute to a dynamic company as an AI/ML Engineer.
+
+%====================
+% Core Skills
+%====================
+\section*{Core Skills}
+\begin{itemize}[left=0pt]
+\setlength\itemsep{-0.3em}
+    \item \textbf{Programming Languages:} Python, C, C++, C\#, Java, Swift, ...
+    \item \textbf{AI/ML Frameworks:} TensorFlow, PyTorch, Keras, Pandas, Scikit-learn
+    \item \textbf{Software Dev.:} Windows, MacOS, Secure Auth. (FIDO, PKI), REST APIs
+    \item \textbf{Databases:} SQL, MySQL, MongoDB, PostgreSQL, NoSQL
+    \item \textbf{Microcontroller Dev.:} Arduino, Atmel, ESP, STM32, Raspberry Pi, PIC
+    \item \textbf{Tools \& Platforms:} Git, GitLab, Docker, AWS, Azure, GCP, CI/CD
+\end{itemize}
+
+
+%====================
+% Work Experience
+%====================
+\section*{Work Experience}
+
+\begin{itemize}[left=0pt]
+    \item \textbf{A.I. Engineer, Javis SRL} \textit{\fontsize{8}{0}\selectfont (Remote, Italy)} \hfill \textit{Mar 2024 - Present} \\
+    Intern in AI and ML projects, developing intelligent systems for logisric optimization using Python and deep learning frameworks. 
+    \\ \textit{Skills:} Classic AI, Deep Learning, Time Series, Machine learning
+
+    \item \textbf{Freelance Software Dev.} \textit{\fontsize{8}{0}\selectfont (Hybrid, Wordwide)} \hfill \textit{Jan 2009 - Present} \\
+    Engineered various software solutions: Windows apps smart home systems using microcontrollers, and AI/ML research projects.
+     \\ \textit{Skills:} OOP, AI, Deep Learning, Python, C++, C\#, WPF
+
+    \item \textbf{Software Dev., Vancosys Inc.} \textit{\fontsize{8}{0}\selectfont (Remote, Canada)} \hfill \textit{Nov 2021 - Sep 2022} \\
+    Designed cross-platform apps for IDmelon’s authentication solutions using C\#, Swift, and cryptographic protocols (FIDO, PKI, OpenSSL). 
+    \\ \textit{Skills:} Secure Authentication, Swift, Cryptography, FIDO
+    
+    \item \textbf{Senior Software Dev., Azar Liopad}  \textit{\fontsize{8}{0}\selectfont (Hybrid)} \hfill \textit{Aug 2020 - Sep 2022} \\
+    Full-stack developer for smart firefighting and safety equipment software using C\# and Visual Studio, with serial and client/server communication. \\ \textit{Skills:} C\#, WPF, .NET, Visual Studio
+
+    \item \textbf{Hardware Specialist, Tajhiz Teb}  \textit{\fontsize{8}{0}\selectfont (on-site)} \hfill \textit{May 2019 - Mar 2021} \\
+    Led R\&D in hardware for smart medical gadgets, including mobile ECG devices. \textit{Skills:} IoT, Arduino, ARM, client/server programming, PCB Design
+\end{itemize}
+
+\end{paracol} % End two-column layout
+
+
+\newpage
+%\vspace*{0.5cm}
+
+%====================
+% Highlight Projects
+%====================
+\section*{Highlight Projects}
+\begin{itemize}[left=0pt]
+	\item \textbf{\href{https://github.com/PooyaNasiri/bone-age-prediction}{Bone Age Prediction}:} Developed a deep learning model for predicting age from X-ray images of hand bones using Shallow, ResNet50, and InceptionV4. Achieved a MAE of 10 months using InceptionV4. Preprocessing involved CLAHE filtering and channel reduction, and utilized Google MediaPipe for hand detection and cropping. \textit{(Skills: CNN, Deep Learning, TensorFlow, NumPy, Computer Vision, Python)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/GrayScale2RGB-GAN-Model}{Grayscale to RGB Image using GAN}:} Built and fine tuned a GAN model for image colorization. Achieved realistic results using Python and TensorFlow. \textit{(Skills: GANs, Deep Learning, TensorFlow)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/Human-Voice-Gender-Detector}{Human Voice Gender Detector}:} Built a deep learning model to recognize gender and age from real-time speech using TensorFlow and RNN/CNN with accuracy of 84\% in developement. \\ \textit{(Skills: Time Series, Deep Learning, Machine Learning, TensorFlow, Python)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/Weather-Classification}{Weather Classification}:} Architected a weather classification model using CNNs with TensorFlow, integrating diverse weather datasets reaching accuracy of 99.9\%. \textit{(Skills: CNN, TensorFlow, Python)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/ai_supplychain_management}{A.I. Supply Chain Management}:} Devised an AI-based system for supply chain optimization using heuristic algorithms and C\#. \textit{(Skills: AI, C\#, Optimization)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/3D-Data-Processing}{3D Data Processing}:} Implemented the SGM algorithm in C++ for dense disparity maps from stereo images using OpenCV. Evaluated accuracy with MSE. \textit{(Skills: OpenCV, C++, Computer Vision)}
+    \item \textbf{\href{https://github.com/PooyaNasiri/ROS-Intelligent-Robotics}{Robot Operating System (ROS) Project}:} Initiated intelligent robotic applications using ROS and C++ for Tiago robot simulations, focusing on navigation and control. \textit{(Skills: C++, ROS, Linux)}
+    \item \textbf{Few-View Object Reconstruction:} Created a reconstruction model with unknown categories and camera poses using OpenCV. \textit{(Skills: 3D Data Processing, OpenCV)}
+  
+    \item \textbf{\href{https://github.com/PooyaNasiri/image-segmenter}{Image Segmentation}:} Designed an interactive image segmentation tool using OpenCV in C++ for real-time image and video processing. \textit{(Skills: OpenCV, C++, Image Processing, Computer Vision)}
+
+   \item \textbf{A.I. Algorithm Development:} 
+\href{https://github.com/PooyaNasiri/maze}{Maze}, 
+\href{https://github.com/PooyaNasiri/tower-of-hanoi}{Tower of Hanoi}, 
+\href{https://github.com/PooyaNasiri/knights-tour}{Knight's Tour}, 
+\href{https://github.com/PooyaNasiri/8Puzzle}{8 Puzzle}, 
+\href{https://github.com/PooyaNasiri/2048}{2048}, and 
+\href{https://github.com/PooyaNasiri/Navigator}{Navigation systems}. 
+\textit{(Skills:A.I., Algorithm Design, Python, Optimization)}
+\end{itemize}
+
+
+%====================
+% Education
+%====================
+\section*{Education}
+\begin{itemize}[left=0pt]
+    \item \textbf{Università degli Studi di Padova} \\
+    Master of Engineering (MEng), Computer Engineering - Artificial Intelligence \hfill \textit{Apr 2022 - Present} \\
+    \textit{Skills:} Machine Learning, Deep Learning, Computer Vision, AI.
+    
+    \item \textbf{Azad University (IAU)} \\
+    Bachelor of Engineering (BE), Computer Software Engineering \hfill \textit{Sep 2015 - Feb 2019} \\
+    \textit{Skills:} OOP, .NET, C\#, A.I., Java  |  \textit{Activities:} Teaching Assistant, Quantum computers
+
+    \item \textbf{Tehran Institute of Technology} \\
+    Engineer's Degree, Microcontroller \hfill \textit{Oct 2012 - Jun 2015} \\
+    \textit{Skills:} IoT, ARM Architecture, AVR  | \textit{Activities:} AVR/ARM programming in C and Assembly
+
+    \item \textbf{Students' Science and Research Institute} \\
+    Computer Programming Course \hfill \textit{Oct 2010 - Jun 2013} \\
+    \textit{Skills:} OOP, C, C++, C\#, Java  | \textit{Activities:} RoboCup Programming Competitions
+\end{itemize}
+
+
+%====================
+% Certifications
+%====================
+\section*{Certifications}
+\begin{itemize}[left=0pt]
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-76207d5f-bf68-4c5a-824a-4041d410daa9/}{Python for Machine Learning}}\hfill \textit{Nov 2021}
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-6bb2318e-779c-4a16-b478-37e08fbac05e/}{Machine Learning from Basic to Advanced}}\hfill \textit{Oct 2021}
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-defd535c-ccfb-4caa-be03-a2bc340e5676/}{Artificial Intelligence (AI) in the classroom}}\hfill \textit{Oct 2021}
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-f9ccd8f4-9edb-4c01-9173-77b9dd8ce194/}{Cutting-Edge AI: Deep Reinforcement Learning in Python}}\hfill \textit{Sep 2021}
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-d6e9bc83-bd0f-4de0-8e6d-9f1118998de5/}{Learn Machine learning \& AI (Including 3 Projects)}}\hfill \textit{Aug 2021}
+ \item \textbf{\href{https://www.udemy.com/certificate/UC-df26016e-02b5-4816-9f0a-2718bb6c71f0/}{C\# Console and Windows Forms Development - LINQ \& ADO.NET}}\hfill \textit{Jul 2021}
+\end{itemize}
+\end{document}
